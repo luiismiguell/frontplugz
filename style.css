@@ -1,6 +1,7 @@
 /* --- Variáveis Globais e Reset Básico --- */
 :root {
-    --primary-blue: #0f1742;
+    /* COR ATUALIZADA AQUI */
+    --primary-blue: #0D218A; 
     --accent-blue: #3E63DD;
     --white: #FFFFFF;
     --text-gray: #D1D5DB;
@@ -2561,4 +2562,15 @@ body.page-privacy {
 .service-card-link {
     text-decoration: none;
     color: inherit; /* Garante que a cor do texto seja herdada corretamente */
+}
+.mouse-glow {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: top 0.1s ease-out, left 0.1s ease-out;
 }

@@ -183,3 +183,61 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', () => moveToSlide(currentIndex));
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    // ===================================================
+    // ========= LÓGICA DO BRILHO DO MOUSE (REATIVADA) =========
+    // ===================================================
+    const glow = document.querySelector('.mouse-glow');
+    if (glow) {
+        window.addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            requestAnimationFrame(() => {
+                glow.style.left = `${clientX}px`;
+                glow.style.top = `${clientY}px`;
+            });
+        });
+    }
+
+    // ================================================
+    // ========= LÓGICA PARA MÚLTIPLOS CARROSSÉIS =========
+    // ================================================
+    
+    const carousels = document.querySelectorAll('.carousel-component');
+
+    carousels.forEach(carousel => {
+        const track = carousel.querySelector('.carousel-track');
+        if (!track) return;
+
+        const slides = Array.from(track.children);
+        const nextButton = carousel.querySelector('.next-arrow');
+        const prevButton = carousel.querySelector('.prev-arrow');
+        
+        if (slides.length === 0 || !nextButton || !prevButton) {
+            return;
+        }
+
+        let currentIndex = 0;
+        const slideCount = slides.length;
+
+        const moveToSlide = (targetIndex) => {
+            if (targetIndex >= slideCount) {
+                targetIndex = 0;
+            } else if (targetIndex < 0) {
+                targetIndex = slideCount - 1;
+            }
+
+            track.style.transform = `translateX(-${targetIndex * 100}%)`;
+            currentIndex = targetIndex;
+        };
+
+        nextButton.addEventListener('click', () => {
+            moveToSlide(currentIndex + 1);
+        });
+
+        prevButton.addEventListener('click', () => {
+            moveToSlide(currentIndex - 1);
+        });
+        
+        moveToSlide(0);
+    });
+});

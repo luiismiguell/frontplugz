@@ -14,181 +14,147 @@
     <div class="background-image"></div>
     <div class="background-dots"></div>
 
-        <header class="main-header">
-            <div class="container">
-                <nav class="main-nav">
-                    <div class="logo">
-                        <!-- ===== MODIFICAÇÃO AQUI: Adicionado o link <a> envolvendo o SVG ===== -->
-                        <a href="index.html">
-                            <svg width="112" height="36" viewBox="0 0 112 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <defs><linearGradient id="logo-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5B21B6"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs>
-                                <text x="0" y="27" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="white">plug</text>
-                                <g transform="translate(72 0)"><rect width="36" height="36" rx="10" fill="url(#logo-gradient)"/><text x="9" y="27" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="white">Z</text></g>
-                            </svg>
-                        </a>
-                        <!-- ======================================================================= -->
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="#">Quem Somos</a></li>
-                        
-                        <!-- ===== MENU DROPDOWN APLICADO AQUI ===== -->
-                        <li class="nav-item-dropdown">
-                            <a href="#">Z.benefícios</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="zbank.html">Z.Bank</a></li>
-                                <li><a href="zfarma.html">Z.Farma</a></li>
-                                <li><a href="zvida.html">Z.Vida</a></li>
-                                <li><a href="zresidencia.html">Z.Residência</a></li>
-                                <li><a href="zprotecao.html">Z.Proteção</a></li>
-                            </ul>
-                        </li>
-                        <!-- ===================================== -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <svg width="112" height="36" viewBox="0 0 112 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs><linearGradient id="logo-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5B21B6"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs>
+                            <text x="0" y="27" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="white">plug</text>
+                            <g transform="translate(72 0)"><rect width="36" height="36" rx="10" fill="url(#logo-gradient)"/><text x="9" y="27" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="white">Z</text></g>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    
+                    <li class="nav-item-dropdown">
+                        <a href="#">Z.benefícios</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="zbank.html">Z.Bank</a></li>
+                            <li><a href="zfarma.html">Z.Farma</a></li>
+                            <li><a href="zvida.html">Z.Vida</a></li>
+                            <li><a href="zresidencia.html">Z.Residência</a></li>
+                            <li><a href="zprotecao.html">Z.Proteção</a></li>
+                        </ul>
+                    </li>
 
-                        <li><a href="zparceiros.html">Z.Parceiros</a></li>
-                    </ul>
-                    <div class="nav-buttons">
-                        <button class="btn btn-outline">Quero ser Plug.Z</button>
-                        <button class="btn btn-solid">Fazer Login</button>
-                    </div>
-                </nav>
-            </div>
-        </header>
+                    <li><a href="zparceiros.html">Z.Parceiros</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn btn-outline">Quero ser Plug.Z</button>
+                    <button class="btn btn-solid">Fazer Login</button>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-        <main class="main-content">
-            <div class="container content-wrapper">
-                <section class="hero-text">
-                    <h1>Benefícios reais e serviços inteligentes</h1>
-                    <p>Ofereça as melhores escolhas para você, seus colaboradores, amigos e família.</p>
-                    <div class="price-section">
-                        <span class="price-label">por apenas</span>
-                        <span class="price-value">R$ 37,90</span>
-                        <span class="price-period">por pessoa/mês</span>
+    <main class="main-content">
+        <div class="container content-wrapper">
+            <section class="hero-text">
+                <h1>Benefícios reais e serviços inteligentes</h1>
+                <p>Ofereça as melhores escolhas para você, seus colaboradores, amigos e família.</p>
+                <div class="price-section">
+                    <span class="price-label">por apenas</span>
+                    <span class="price-value">R$ 37,90</span>
+                    <span class="price-period">por pessoa/mês</span>
+                </div>
+                <a href="assine.html" class="btn btn-gradient">QUERO SER PLUG.Z</a>
+            </section>
+            
+            <section class="services-grid">
+                <a href="zbank.html" class="service-card-link">
+                    <div class="service-card">
+                        <div class="icon-bg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="1" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+                        <span>Z.bank</span>
                     </div>
-                    <a href="assine.html"><button class="btn btn-gradient">QUERO SER PLUG.Z</button></a>
-                </section>
-                
-                <section class="services-grid">
-                    <!-- Z.Bank com Ícone de Cifrão ($) -->
-                    <a href="zbank.html" class="service-card-link">
-                        <div class="service-card">
-                            <div class="icon-bg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="1" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                            </div>
-                            <span>Z.bank</span>
-                        </div>
-                    </a>
-                    <!-- Z.Farma com Ícone de Proteção/Escudo -->
-                    <a href="zfarma.html" class="service-card-link">
-                        <div class="service-card">
-                            <div class="icon-bg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
-                            </div>
-                            <span>Z.farma</span>
-                        </div>
-                    </a>
-                    <!-- Z.Vida com Ícone de Vida (Correto) -->
-                    <a href="zvida.html" class="service-card-link">
-                        <div class="service-card">
-                            <div class="icon-bg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                            </div>
-                            <span>Z.vida</span>
-                        </div>
-                    </a>
-                    <!-- Z.Residência com Ícone de Residência (Correto) -->
-                    <a href="zresidencia.html" class="service-card-link">
-                        <div class="service-card">
-                            <div class="icon-bg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                            </div>
-                            <span>Z.residência</span>
-                        </div>
-                    </a>
-                    <!-- Z.Proteção com Ícone de Informação (i) -->
-                    <a href="zprotecao.html" class="service-card-link">
-                        <div class="service-card">
-                            <div class="icon-bg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-                            </div>
-                            <span>Z.proteção</span>
-                        </div>
-                    </a>
-                    <!-- Z.Parceiros com Ícone de Parceiros (Correto) -->
-                    <a href="zparceiros.html" class="service-card-link">
-                        <div class="service-card">
-                            <div class="icon-bg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                            </div>
-                            <span>Z.parceiros</span>
-                        </div>
-                    </a>
-                </section>
-            </div>
-        </main>
+                </a>
+                <a href="zfarma.html" class="service-card-link">
+                    <div class="service-card">
+                        <div class="icon-bg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg></div>
+                        <span>Z.farma</span>
+                    </div>
+                </a>
+                <a href="zvida.html" class="service-card-link">
+                    <div class="service-card">
+                        <div class="icon-bg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+                        <span>Z.vida</span>
+                    </div>
+                </a>
+                <a href="zresidencia.html" class="service-card-link">
+                    <div class="service-card">
+                        <div class="icon-bg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
+                        <span>Z.residência</span>
+                    </div>
+                </a>
+                <a href="zprotecao.html" class="service-card-link">
+                    <div class="service-card">
+                        <div class="icon-bg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></div>
+                        <span>Z.proteção</span>
+                    </div>
+                </a>
+                <a href="zparceiros.html" class="service-card-link">
+                    <div class="service-card">
+                        <div class="icon-bg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+                        <span>Z.parceiros</span>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </main>
 
    <section class="benefits-carousel-section">
         <div class="container">
             <div class="carousel-wrapper carousel-component">
                 <div class="carousel-track-container">
                     <div class="carousel-track">
-                        <!-- Slide 1: Z.bank -->
                         <div class="carousel-slide">
                             <div class="slide-content">
                                 <span class="service-tag"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>Z.bank</span>
                                 <h2>sua conta digital completa e gratuita</h2>
                                 <p>Tenha um banco digital cheio de benefícios tanto para você quanto para sua empresa.</p>
-                                <!-- BOTÃO ATUALIZADO -->
-                                <a href="zbank.html"><button class="btn btn-gradient">CONHEÇA JÁ</button></a>
+                                <a href="zbank.html" class="btn btn-gradient">CONHEÇA JÁ</a>
                             </div>
                             <div class="slide-image-wrapper"><img src="imgs/index/car-zbank.jpg" alt="Mulher sorrindo usando celular"></div>
                         </div>
-                        <!-- Slide 2: Z.farma -->
                         <div class="carousel-slide">
                             <div class="slide-content">
                                 <span class="service-tag"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>Z.farma</span>
                                 <h2>Z.farma é uma assinatura que oferece descontos incríveis em produtos e medicamentos</h2>
-                                 <!-- BOTÃO ATUALIZADO -->
-                                <a href="zfarma.html"><button class="btn btn-gradient">CONHEÇA JÁ</button></a>
+                                <a href="zfarma.html" class="btn btn-gradient">CONHEÇA JÁ</a>
                             </div>
                             <div class="slide-image-wrapper"><img src="imgs/index/car-zfarma.jpg" alt="Cliente em uma farmácia"></div>
                         </div>
-                        <!-- Slide 3: Z.vida -->
                         <div class="carousel-slide">
                             <div class="slide-content">
                                 <span class="service-tag"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Z.vida</span>
                                 <h2>Seguro de vida Sulamérica para o titular da assinatura</h2>
-                                 <!-- BOTÃO ATUALIZADO -->
-                                <a href="zvida.html"><button class="btn btn-gradient">CONHEÇA JÁ</button></a>
+                                <a href="zvida.html" class="btn btn-gradient">CONHEÇA JÁ</a>
                             </div>
                             <div class="slide-image-wrapper"><img src="imgs/index/car-zvida.jpg" alt="Homem de negócios sorrindo com celular"></div>
                         </div>
-                        <!-- Slide 4: Z.residência -->
                         <div class="carousel-slide">
                             <div class="slide-content">
                                 <span class="service-tag"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>Z.residência</span>
                                 <h2>Assistência para você e sua residência</h2>
-                                 <!-- BOTÃO ATUALIZADO -->
-                                <a href="zresidencia.html"><button class="btn btn-gradient">CONHEÇA JÁ</button></a>
+                                <a href="zresidencia.html" class="btn btn-gradient">CONHEÇA JÁ</a>
                             </div>
                             <div class="slide-image-wrapper"><img src="imgs/index/car-zresidencia.jpg" alt="Mulher relaxando no sofá"></div>
                         </div>
-                        <!-- Slide 5: Z.proteção -->
                         <div class="carousel-slide">
                             <div class="slide-content">
                                 <span class="service-tag"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11.25a4.72 4.72 0 1 0-8.86 2.09"></path><path d="M14.25 12.75 16 14l-4 4-1.5-1.5"></path><path d="m14 19.5 7-7-7-7"></path><path d="M9.75 11.25 8 13l4 4 1.5-1.5"></path><path d="m10 4.5-7 7 7 7"></path></svg>Z.proteção</span>
                                 <h2>Proteja seus dados pessoais que estão na internet com eficiência e agilidade</h2>
-                                 <!-- BOTÃO ATUALIZADO -->
-                                <a href="zprotecao.html"><button class="btn btn-gradient">CONHEÇA JÁ</button></a>
+                                <a href="zprotecao.html" class="btn btn-gradient">CONHEÇA JÁ</a>
                             </div>
                             <div class="slide-image-wrapper"><img src="imgs/index/car-zprotecao.jpg" alt="Mulher usando laptop no sofá"></div>
                         </div>
-                        <!-- Slide 6: Z.parceiros -->
                         <div class="carousel-slide">
                             <div class="slide-content">
                                 <span class="service-tag"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Z.parceiros</span>
                                 <h2>Parceiros incríveis que garantem as melhores soluções para nossos assinantes!</h2>
-                                 <!-- BOTÃO ATUALIZADO -->
-                                <a href="zparceiros.html"><button class="btn btn-gradient">CONHEÇA JÁ</button></a>
+                                <a href="zparceiros.html" class="btn btn-gradient">CONHEÇA JÁ</a>
                             </div>
                             <div class="slide-image-wrapper"><img src="imgs/index/car-zparceiros.jpg" alt="Aperto de mãos em ambiente de escritório"></div>
                         </div>
@@ -218,7 +184,7 @@
                     <img src="imgs/index/logo-univers.png" alt="Logo Univers">
                     <img src="imgs/index/logo-sulamerica.png" alt="Logo SulAmérica">
                 </div>
-                <div class="logo-list">
+                <div class="logo-list" aria-hidden="true">
                     <img src="imgs/index/logo-edenred.png" alt="Logo Edenred">
                     <img src="imgs/index/logo-zentek.png" alt="Logo Zentek">
                     <img src="imgs/index/logo-3seg.png" alt="Logo 3SEG">
@@ -238,7 +204,7 @@
                 <div class="performance-content">
                     <div class="performance-header">
                         <span class="pill">Performance</span>
-                        <img src="https://via.placeholder.com/100x30/ffffff/0B228B?text=PH3A" alt="Logo PH3A" class="partner-logo">
+                        <img src="imgs/index/section-ph3a.png" alt="Logo PH3A" class="partner-logo">
                     </div>
                     <h2>Conheça o público que visita seu site e aumente sua performance!</h2>
                     <p class="subtitle">Com a máquina de performance você:</p>
@@ -281,30 +247,19 @@
                 <div class="environment-info">
                     <h2>Assinante Plug.z economiza muito e ainda ajuda o meio ambiente!</h2>
                     <div class="environment-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">1.280</span>
-                            <p class="stat-label">hectares<br>de reserva</p>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">+1.020</span>
-                            <p class="stat-label">espécies<br>de aves</p>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">+20.000</span>
-                            <p class="stat-label">espécies<br>arbóreas</p>
-                        </div>
+                        <div class="stat-item"><span class="stat-number">1.280</span><p class="stat-label">hectares<br>de reserva</p></div>
+                        <div class="stat-item"><span class="stat-number">+1.020</span><p class="stat-label">espécies<br>de aves</p></div>
+                        <div class="stat-item"><span class="stat-number">+20.000</span><p class="stat-label">espécies<br>arbóreas</p></div>
                     </div>
                 </div>
                 <div class="environment-video-side">
                     <p>Ao contratar sua assinatura, a Plug.z vai doar R$1,00 por mês para a Reserva Ecológica Samambaia, projeto que visa neutralizar parte do seu consumo de carbono.</p>
-                    <a href="https://www.youtube.com/watch?v=bH5TmgwI7Fs&t" class="video-thumbnail">
+                    <a href="https://www.youtube.com/watch?v=bH5TmgwI7Fs&t" class="video-thumbnail" target="_blank" rel="noopener noreferrer">
                         <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2232&auto=format&fit=crop" alt="Thumbnail de vídeo aéreo de uma floresta e campo">
-                        <div class="play-button-overlay">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
-                        </div>
+                        <div class="play-button-overlay"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></div>
                     </a>
                 </div>
-                <button class="btn btn-gradient">ASSINAR E APOIAR</button>
+                <a href="assine.html" class="btn btn-gradient">ASSINAR E APOIAR</a>
             </div>
         </div>
     </section>
@@ -322,7 +277,9 @@
                         <!-- Slide 1 -->
                         <div class="testimonial-slide">
                             <div class="testimonial-card">
-                                <svg class="quote-icon" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="quote-gradient-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs><path d="M12.23 29.5L16.5 17.25C16.5 16.0375 16.1458 15.0417 15.4375 14.2625C14.7292 13.4833 13.5 12.625 11.75 11.6875L10.38 10.375C11.5567 9.89167 12.575 9.41667 13.435 8.95L14.735 6.6C12.4217 7.7 10.425 8.95 8.745 10.35C7.065 11.75 5.86 13.25 5.13 14.85C4.4 16.45 4.035 18.2 4.035 20.1V29.5H12.235H12.23ZM32.765 29.5L37.035 17.25C37.035 16.0375 36.6808 15.0417 35.9725 14.2625C35.2642 13.4833 34.035 12.625 32.285 11.6875L30.915 10.375C32.0917 9.89167 33.11 9.41667 33.97 8.95L35.27 6.6C32.9567 7.7 30.96 8.95 29.28 10.35C27.6 11.75 26.395 13.25 25.665 14.85C24.935 16.45 24.57 18.2 24.57 20.1V29.5H32.765Z" fill="url(#quote-gradient-1)"/></svg>
+                                <svg class="quote-icon" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs><linearGradient id="quote-gradient-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs>
+                                    <path d="M12.23 29.5L16.5 17.25C16.5 16.0375 16.1458 15.0417 15.4375 14.2625C14.7292 13.4833 13.5 12.625 11.75 11.6875L10.38 10.375C11.5567 9.89167 12.575 9.41667 13.435 8.95L14.735 6.6C12.4217 7.7 10.425 8.95 8.745 10.35C7.065 11.75 5.86 13.25 5.13 14.85C4.4 16.45 4.035 18.2 4.035 20.1V29.5H12.235H12.23ZM32.765 29.5L37.035 17.25C37.035 16.0375 36.6808 15.0417 35.9725 14.2625C35.2642 13.4833 34.035 12.625 32.285 11.6875L30.915 10.375C32.0917 9.89167 33.11 9.41667 33.97 8.95L35.27 6.6C32.9567 7.7 30.96 8.95 29.28 10.35C27.6 11.75 26.395 13.25 25.665 14.85C24.935 16.45 24.57 18.2 24.57 20.1V29.5H32.765Z" fill="url(#quote-gradient-1)"/></svg>
                                 <p class="testimonial-quote">...contratei seguro veicular para os dois carros da família com <strong>52% de redução</strong></p>
                                 <p class="testimonial-body">Renovação de seguro do carro é sempre um custo alto. Mas assinei o programa de benefícios da Plug.z e no dia seguinte pedi uma cotação: contratei seguro veicular para os dois carros da família com 52% de redução. Além de ter contado com um atendimento excelente.</p>
                                 <div class="testimonial-author">
@@ -334,7 +291,9 @@
                         <!-- Slide 2 -->
                         <div class="testimonial-slide">
                             <div class="testimonial-card">
-                                <svg class="quote-icon" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="quote-gradient-2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs><path d="M12.23 29.5L16.5 17.25C16.5 16.0375 16.1458 15.0417 15.4375 14.2625C14.7292 13.4833 13.5 12.625 11.75 11.6875L10.38 10.375C11.5567 9.89167 12.575 9.41667 13.435 8.95L14.735 6.6C12.4217 7.7 10.425 8.95 8.745 10.35C7.065 11.75 5.86 13.25 5.13 14.85C4.4 16.45 4.035 18.2 4.035 20.1V29.5H12.235H12.23ZM32.765 29.5L37.035 17.25C37.035 16.0375 36.6808 15.0417 35.9725 14.2625C35.2642 13.4833 34.035 12.625 32.285 11.6875L30.915 10.375C32.0917 9.89167 33.11 9.41667 33.97 8.95L35.27 6.6C32.9567 7.7 30.96 8.95 29.28 10.35C27.6 11.75 26.395 13.25 25.665 14.85C24.935 16.45 24.57 18.2 24.57 20.1V29.5H32.765Z" fill="url(#quote-gradient-2)"/></svg>
+                                <svg class="quote-icon" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs><linearGradient id="quote-gradient-2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs>
+                                    <path d="M12.23 29.5L16.5 17.25C16.5 16.0375 16.1458 15.0417 15.4375 14.2625C14.7292 13.4833 13.5 12.625 11.75 11.6875L10.38 10.375C11.5567 9.89167 12.575 9.41667 13.435 8.95L14.735 6.6C12.4217 7.7 10.425 8.95 8.745 10.35C7.065 11.75 5.86 13.25 5.13 14.85C4.4 16.45 4.035 18.2 4.035 20.1V29.5H12.235H12.23ZM32.765 29.5L37.035 17.25C37.035 16.0375 36.6808 15.0417 35.9725 14.2625C35.2642 13.4833 34.035 12.625 32.285 11.6875L30.915 10.375C32.0917 9.89167 33.11 9.41667 33.97 8.95L35.27 6.6C32.9567 7.7 30.96 8.95 29.28 10.35C27.6 11.75 26.395 13.25 25.665 14.85C24.935 16.45 24.57 18.2 24.57 20.1V29.5H32.765Z" fill="url(#quote-gradient-2)"/></svg>
                                 <p class="testimonial-quote">...tive uma <strong>redução de 65%</strong> no meu plano de saúde</p>
                                 <p class="testimonial-body">Ao renovar meu plano de saúde usei Z.concierge e tive uma redução de 65%, mantendo as mesmas coberturas do plano anterior. Só esta economia já pagou mais de um ano inteiro de assinatura do programa de benefícios da Plug.z.</p>
                                 <div class="testimonial-author">
@@ -346,7 +305,9 @@
                         <!-- Slide 3 -->
                         <div class="testimonial-slide">
                             <div class="testimonial-card">
-                                <svg class="quote-icon" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="quote-gradient-3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs><path d="M12.23 29.5L16.5 17.25C16.5 16.0375 16.1458 15.0417 15.4375 14.2625C14.7292 13.4833 13.5 12.625 11.75 11.6875L10.38 10.375C11.5567 9.89167 12.575 9.41667 13.435 8.95L14.735 6.6C12.4217 7.7 10.425 8.95 8.745 10.35C7.065 11.75 5.86 13.25 5.13 14.85C4.4 16.45 4.035 18.2 4.035 20.1V29.5H12.235H12.23ZM32.765 29.5L37.035 17.25C37.035 16.0375 36.6808 15.0417 35.9725 14.2625C35.2642 13.4833 34.035 12.625 32.285 11.6875L30.915 10.375C32.0917 9.89167 33.11 9.41667 33.97 8.95L35.27 6.6C32.9567 7.7 30.96 8.95 29.28 10.35C27.6 11.75 26.395 13.25 25.665 14.85C24.935 16.45 24.57 18.2 24.57 20.1V29.5H32.765Z" fill="url(#quote-gradient-3)"/></svg>
+                                <svg class="quote-icon" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs><linearGradient id="quote-gradient-3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs>
+                                    <path d="M12.23 29.5L16.5 17.25C16.5 16.0375 16.1458 15.0417 15.4375 14.2625C14.7292 13.4833 13.5 12.625 11.75 11.6875L10.38 10.375C11.5567 9.89167 12.575 9.41667 13.435 8.95L14.735 6.6C12.4217 7.7 10.425 8.95 8.745 10.35C7.065 11.75 5.86 13.25 5.13 14.85C4.4 16.45 4.035 18.2 4.035 20.1V29.5H12.235H12.23ZM32.765 29.5L37.035 17.25C37.035 16.0375 36.6808 15.0417 35.9725 14.2625C35.2642 13.4833 34.035 12.625 32.285 11.6875L30.915 10.375C32.0917 9.89167 33.11 9.41667 33.97 8.95L35.27 6.6C32.9567 7.7 30.96 8.95 29.28 10.35C27.6 11.75 26.395 13.25 25.665 14.85C24.935 16.45 24.57 18.2 24.57 20.1V29.5H32.765Z" fill="url(#quote-gradient-3)"/></svg>
                                 <p class="testimonial-quote">...tive uma redução de <strong>76% na contratação de seguro viagem para minha família</strong></p>
                                 <p class="testimonial-body">Assinei o programa de benefícios e, já no primeiro mês, utilizei o Z.cuidados. Com o serviço inteligente oferecido, tive uma redução de 76% na contratação de seguro viagem para minha família. E tudo isso por uma assinatura de apenas R$37,90/mês</p>
                                 <div class="testimonial-author">
@@ -358,7 +319,9 @@
                         <!-- Slide 4 -->
                         <div class="testimonial-slide">
                             <div class="testimonial-card">
-                                <svg class="quote-icon" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="quote-gradient-4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs><path d="M12.23 29.5L16.5 17.25C16.5 16.0375 16.1458 15.0417 15.4375 14.2625C14.7292 13.4833 13.5 12.625 11.75 11.6875L10.38 10.375C11.5567 9.89167 12.575 9.41667 13.435 8.95L14.735 6.6C12.4217 7.7 10.425 8.95 8.745 10.35C7.065 11.75 5.86 13.25 5.13 14.85C4.4 16.45 4.035 18.2 4.035 20.1V29.5H12.235H12.23ZM32.765 29.5L37.035 17.25C37.035 16.0375 36.6808 15.0417 35.9725 14.2625C35.2642 13.4833 34.035 12.625 32.285 11.6875L30.915 10.375C32.0917 9.89167 33.11 9.41667 33.97 8.95L35.27 6.6C32.9567 7.7 30.96 8.95 29.28 10.35C27.6 11.75 26.395 13.25 25.665 14.85C24.935 16.45 24.57 18.2 24.57 20.1V29.5H32.765Z" fill="url(#quote-gradient-4)"/></svg>
+                                <svg class="quote-icon" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs><linearGradient id="quote-gradient-4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient></defs>
+                                    <path d="M12.23 29.5L16.5 17.25C16.5 16.0375 16.1458 15.0417 15.4375 14.2625C14.7292 13.4833 13.5 12.625 11.75 11.6875L10.38 10.375C11.5567 9.89167 12.575 9.41667 13.435 8.95L14.735 6.6C12.4217 7.7 10.425 8.95 8.745 10.35C7.065 11.75 5.86 13.25 5.13 14.85C4.4 16.45 4.035 18.2 4.035 20.1V29.5H12.235H12.23ZM32.765 29.5L37.035 17.25C37.035 16.0375 36.6808 15.0417 35.9725 14.2625C35.2642 13.4833 34.035 12.625 32.285 11.6875L30.915 10.375C32.0917 9.89167 33.11 9.41667 33.97 8.95L35.27 6.6C32.9567 7.7 30.96 8.95 29.28 10.35C27.6 11.75 26.395 13.25 25.665 14.85C24.935 16.45 24.57 18.2 24.57 20.1V29.5H32.765Z" fill="url(#quote-gradient-4)"/></svg>
                                 <p class="testimonial-quote">...direto no caixa, <strong>tive desconto de 55% na compra</strong></p>
                                 <p class="testimonial-body">Nem acreditei quando comprei meus medicamentos na Drogasil e, direto no caixa, tive desconto de 55% na compra. Vou usar sempre meu Z.farma.</p>
                                 <div class="testimonial-author">
@@ -403,7 +366,8 @@
                 </div>
                 <div class="footer-column">
                     <h4>ASSINE JÁ</h4>
-                    <button class="btn btn-gradient">QUERO SER PLUG.Z</button>
+                    <!-- Botão agora é um link estilizado -->
+                    <a href="quero-ser.html" class="btn btn-gradient">QUERO SER PLUG.Z</a>
                 </div>
                 <div class="footer-column">
                     <ul class="contact-list">
