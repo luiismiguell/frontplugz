@@ -47,7 +47,7 @@
                         </ul>
                         <div class="nav-buttons">
                             <button class="btn btn-outline">Quero ser Plug.Z</button>
-                            <button class="btn btn-solid">Fazer Login</button>
+                            <button class="btn btn-solid" id="login-btn">Fazer Login</button>
                         </div>
                     </nav>
                 </header>
@@ -169,6 +169,23 @@
                             </div>
                         </div>
                         
+                        <!-- Slide: Z.Proteção -->
+                        <div class="carousel-slide">
+                            <div class="detailed-benefit-card">
+                                <div class="card-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                                    Z.Proteção
+                                </div>
+                                <h3>Proteja seus dados na internet com eficiência e agilidade</h3>
+                                <ul>
+                                    <li>Recuperação e remoção de dados</li>
+                                    <li>Herança Digital e Suporte Direito Digital</li>
+                                    <li>Investigação completa da Deep e Dark Web</li>
+                                    <li>Suporte com atendimento humanizado</li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <!-- Slide: Z.Parceiros -->
                         <div class="carousel-slide">
                             <div class="detailed-benefit-card">
@@ -235,7 +252,7 @@
                     <!-- Coluna 2: Assine Já -->
                     <div class="footer-column">
                         <h4>ASSINE JÁ</h4>
-                        <button class="btn btn-gradient">QUERO SER PLUG.Z</button>
+                        <a href="quero-ser.html" class="btn btn-gradient">QUERO SER PLUG.Z</a>
                     </div>
 
                     <!-- Coluna 3: Contato -->
@@ -263,6 +280,23 @@
         <!-- ========== FIM DO RODAPÉ (FOOTER) =========== -->
         <!-- ============================================= -->
     </div>
-
+    <div class="modal-overlay" id="login-modal-overlay">
+        <div class="modal-content" id="login-modal-content">
+            <button class="modal-close-btn" id="login-modal-close">&times;</button>
+            <h2>Fazer Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">E-mail ou CPF</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <a href="#" class="forgot-password-link">Esqueci minha senha</a>
+                <button type="submit" class="btn btn-gradient">ENTRAR</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
