@@ -2212,7 +2212,7 @@ body {
     }
 }
 /* =================================================== */
-/* ========= ESTILOS CARROSSEL BENEFÍCIOS DETALHADOS ========= */
+/* ========= ESTILOS CARROSSEL BENEFÍCIOS DETALHADOS (VERSÃO FINAL) ========= */
 /* =================================================== */
 
 .detailed-benefits-section {
@@ -2227,25 +2227,13 @@ body {
     margin-bottom: 2rem;
     color: var(--primary-blue);
 }
+.detailed-benefits-header .header-text { max-width: 60%; }
+.detailed-benefits-header h2 { font-size: 2rem; font-weight: 700; margin: 0.75rem 0; }
+.detailed-benefits-header p { color: #4b5563; line-height: 1.6; }
 
-.detailed-benefits-header .header-text {
-    max-width: 60%;
-}
-
-.detailed-benefits-header h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0.75rem 0;
-}
-
-.detailed-benefits-header p {
-    color: #4b5563;
-    line-height: 1.6;
-}
-
+/* Contêiner principal do carrossel */
 .detailed-benefits-carousel {
     position: relative;
-    padding: 0 4rem; /* Espaço para as setas de navegação nas laterais */
 }
 
 .detailed-benefits-carousel .carousel-track-container {
@@ -2254,422 +2242,72 @@ body {
 
 .detailed-benefits-carousel .carousel-track {
     display: flex;
-    gap: 1.5rem; /* Espaçamento entre os cards */
+    gap: 1.5rem;
+    align-items: stretch; 
+    transition: transform 0.5s ease-in-out;
 }
 
 .detailed-benefits-carousel .carousel-slide {
-    flex: 0 0 calc((100% - 3rem) / 3); /* Mostra 3 slides e considera o gap */
-    min-width: 300px; /* Largura mínima para os slides */
+    flex: 0 0 calc((100% - 3rem) / 3); /* Mostra 3 slides com 1.5rem de gap entre eles */
+    min-width: 300px; /* Largura mínima para evitar que fiquem muito pequenos */
 }
 
+/* Setas de navegação com posicionamento absoluto */
+.detailed-benefits-carousel .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: var(--primary-blue);
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    padding: 0;
+    background: none;
+    border: none;
+}
+.detailed-benefits-carousel .carousel-arrow:hover {
+    opacity: 1;
+}
+
+.detailed-benefits-carousel .prev-arrow {
+    left: -3rem; /* Posiciona a seta para fora da área dos slides */
+}
+.detailed-benefits-carousel .next-arrow {
+    right: -3rem; /* Posiciona a seta para fora da área dos slides */
+}
+
+/* O card de benefício */
 .detailed-benefit-card {
     background-color: #0d218a;
     color: #fff;
-    padding: 2rem;
+    padding: 2.5rem; /* Aumenta o padding interno */
     border-radius: 16px;
     height: 100%;
 }
-
-.detailed-benefit-card .card-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    opacity: 0.8;
-    margin-bottom: 1.5rem;
-}
-
-.detailed-benefit-card h3 {
-    font-size: 1.5rem;
-    line-height: 1.3;
-    margin-bottom: 1.5rem;
-}
-
-.detailed-benefit-card .coverage-label {
-    font-size: 0.9rem;
-    opacity: 0.8;
-    margin-bottom: 0.75rem;
-}
-
-.detailed-benefit-card ul {
-    list-style: none;
-    padding-left: 1.25rem;
-}
-
-.detailed-benefit-card ul li {
-    position: relative;
-    padding-bottom: 0.75rem;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    opacity: 0.9;
-}
-
-.detailed-benefit-card ul li::before {
-    content: '•';
-    position: absolute;
-    left: -1.25rem;
-    color: var(--green-accent); /* Cor do marcador */
-}
-
-.carousel-nav-center {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
+.detailed-benefit-card .card-header { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem; }
+.detailed-benefit-card h3 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 1.5rem; }
+.detailed-benefit-card .coverage-label { font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.75rem; }
+.detailed-benefit-card ul { list-style: none; padding-left: 1.25rem; }
+.detailed-benefit-card ul li { position: relative; padding-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.5; opacity: 0.9; }
+.detailed-benefit-card ul li::before { content: '•'; position: absolute; left: -1.25rem; color: var(--green-accent); }
 
 /* Responsividade */
 @media (max-width: 1200px) {
     .detailed-benefits-carousel .carousel-slide {
-        flex: 0 0 calc((100% - 1.5rem) / 2); /* Mostra 2 slides */
+        flex-basis: calc((100% - 1.5rem) / 2); /* Mostra 2 slides em telas médias */
     }
 }
 
 @media (max-width: 768px) {
-    .detailed-benefits-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1.5rem;
-    }
-    .detailed-benefits-header .header-text {
-        max-width: 100%;
-    }
-    .detailed-benefits-carousel .carousel-slide {
-        flex: 0 0 90%; /* Mostra quase 1 slide */
-    }
-    .detailed-benefits-carousel {
-        padding: 0;
-    }
-}
-/* ======================================= */
-/* ========= ESTILOS PÁGINA ASSINE ========= */
-/* ======================================= */
-
-body.page-assine {
-    background-color: #0d218a;
-    color: #fff;
-}
-
-.assine-main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    padding: 6rem 0;
-    min-height: calc(100vh - 120px); /* Ocupa a maior parte da tela */
-}
-
-.assine-column, .login-column {
-    flex: 1;
-    max-width: 450px;
-}
-
-.assine-column h2, .login-column h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.3;
-}
-
-.price-section-assine {
-    margin: 2rem 0;
-}
-
-.price-section-assine .price-label,
-.price-section-assine .price-period {
-    display: block;
-    font-size: 1rem;
-    color: var(--text-gray);
-    opacity: 0.8;
-}
-
-.price-section-assine .price-value {
-    display: block;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin: 0.25rem 0;
-}
-
-.assine-column .activation-note {
-    font-size: 0.8rem;
-    opacity: 0.7;
-    margin-top: 1.5rem;
-    max-width: 250px;
-}
-
-.login-column {
-    text-align: left;
-    padding-left: 4rem;
-}
-
-.login-column h2 {
-    margin-bottom: 2rem;
-}
-
-.vertical-divider {
-    width: 1px;
-    background-color: rgba(255, 255, 255, 0.2);
-    align-self: stretch; /* Faz a linha ocupar toda a altura */
-    min-height: 250px;
-}
-
-/* Responsividade para a página Assine */
-@media (max-width: 950px) {
-    .assine-main-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 3rem;
-        padding: 4rem 0;
-    }
-
-    .vertical-divider {
-        display: none; /* Esconde a linha vertical em telas menores */
-    }
-
-    .login-column {
-        padding-left: 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding-top: 3rem;
-        width: 100%;
-    }
-
-    .assine-column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/* ============================================== */
-/* ========= ESTILOS PÁGINA DE PRIVACIDADE ========= */
-/* ============================================== */
-
-/* Define o fundo branco APENAS para a página de privacidade */
-body.page-privacy {
-    background-color: #fff;
-}
-
-/* Corrige as cores do cabeçalho para ficarem visíveis no fundo branco */
-.page-privacy .main-header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.page-privacy .main-header .logo-text-plug {
-    fill: #0f1742; /* Muda a cor do texto "plug" para escuro */
-}
-.page-privacy .main-header .nav-links a {
-    color: #4b5563; /* Muda a cor dos links para cinza escuro */
-}
-.page-privacy .main-header .nav-links a:hover {
-    color: #0f1742; /* Efeito hover para escuro */
-}
-.page-privacy .main-header .btn-outline {
-    color: #0f1742;
-    border-color: #0f1742;
-}
-.page-privacy .main-header .btn-outline:hover {
-    background-color: #0f1742;
-    color: #fff;
-}
-.page-privacy .main-header .btn-solid {
-    background-color: #0f1742;
-    color: #fff;
-}
-.page-privacy .main-header .btn-solid:hover {
-    background-color: #334155;
-}
-
-/* Faixa de título azul */
-.privacy-hero {
-    background-color: #0d218a;
-    color: #fff;
-    padding: 4rem 0;
-}
-
-.privacy-hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-/* Conteúdo principal da política */
-.privacy-content {
-    background-color: #fff;
-    color: #374151; /* Cinza escuro para o texto */
-    padding: 4rem 0;
-    line-height: 1.7;
-}
-
-.privacy-content .container {
-    max-width: 800px; /* Largura mais confortável para leitura */
-}
-
-.privacy-content h2 {
-    color: var(--primary-blue);
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-.privacy-content h2:first-child {
-    margin-top: 0;
-}
-
-.privacy-content p {
-    margin-bottom: 1.5rem;
-}
-
-.privacy-content ul {
-    list-style-position: outside;
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.privacy-content li {
-    margin-bottom: 1rem;
-}
-
-.privacy-content strong {
-    font-weight: 600;
-    color: #1e293b; /* Cor um pouco mais escura para destaque */
-}
-/* Estilos para a lista de finalidades na página de privacidade */
-.purpose-list {
-    list-style-type: none; /* Remove os números padrão */
-    counter-reset: purpose-counter; /* Inicia um contador */
-    padding-left: 0;
-}
-
-.purpose-list > li {
-    counter-increment: purpose-counter; /* Incrementa o contador para cada item principal */
-    margin-bottom: 2rem;
-}
-
-/* Cria o número customizado (ex: "1.", "2.") */
-.purpose-list > li > strong::before {
-    content: counter(purpose-counter) ". ";
-    font-weight: 700;
-}
-
-.purpose-list > li > ul {
-    list-style-type: disc;
-    padding-left: 2.5rem;
-    margin-top: 1rem;
-}
-
-.purpose-list > li > ul li {
-    margin-bottom: 0.5rem;
-}
-/* Remove o sublinhado dos links dos cards de serviço */
-.service-card-link {
-    text-decoration: none;
-    color: inherit; /* Garante que a cor do texto seja herdada corretamente */
-}
-.mouse-glow {
-    position: fixed;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: top 0.1s ease-out, left 0.1s ease-out;
-}
-/* ======================================= */
-/* ========= ESTILOS DO MODAL DE LOGIN ========= */
-/* ======================================= */
-
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(13, 33, 138, 0.6); /* Cor azul escura com opacidade */
-    backdrop-filter: blur(5px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000; /* Garante que fique sobre todo o conteúdo */
+    .detailed-benefits-header { flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+    .detailed-benefits-header .header-text { max-width: 100%; }
+    .detailed-benefits-carousel .carousel-slide { flex-basis: 90%; }
     
-    /* Escondido por padrão */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.modal-overlay.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-content {
-    background-color: #fff;
-    color: var(--primary-blue);
-    padding: 2.5rem;
-    border-radius: 16px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    position: relative;
-    
-    /* Animação de aparição */
-    transform: translateY(-20px);
-    transition: transform 0.3s ease;
-}
-
-.modal-overlay.visible .modal-content {
-    transform: translateY(0);
-}
-
-.modal-close-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #9ca3af;
-    cursor: pointer;
-    line-height: 1;
-}
-
-.modal-content h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.75rem;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-.forgot-password-link {
-    display: block;
-    text-align: right;
-    font-size: 0.8rem;
-    color: var(--accent-blue);
-    text-decoration: none;
-    margin-bottom: 2rem;
-}
-
-.modal-content .btn {
-    width: 100%;
-    padding: 0.8rem;
-    font-size: 1rem;
+    /* Em telas pequenas, as setas ficam visíveis mas mais próximas */
+    .detailed-benefits-carousel .prev-arrow {
+        left: -1rem;
+    }
+    .detailed-benefits-carousel .next-arrow {
+        right: -1rem;
+    }
 }

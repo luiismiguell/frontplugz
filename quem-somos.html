@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="mouse-glow"></div>
     
     <div class="quemsomos-page-container">
         <!-- A seção de herói azul engloba o cabeçalho e o conteúdo principal -->
@@ -66,8 +67,6 @@
             </div>
         </section>
 
-        <!-- Outras seções da página Quem Somos podem ser adicionadas aqui -->
-
         <!-- ============================================= -->
         <!-- ========= INÍCIO DA SEÇÃO ECOSSISTEMA ========= -->
         <!-- ============================================= -->
@@ -82,8 +81,9 @@
         <!-- ============================================= -->
         <!-- ========== FIM DA SEÇÃO ECOSSISTEMA =========== -->
         <!-- ============================================= -->
+
         <!-- =================================================== -->
-        <!-- ========= INÍCIO DO CARROSSEL DE BENEFÍCIOS ========= -->
+        <!-- ========= INÍCIO DO CARROSSEL DE BENEFÍCIOS (VERSÃO FINAL) ========= -->
         <!-- =================================================== -->
         <section class="detailed-benefits-section">
             <div class="container">
@@ -95,116 +95,68 @@
                     </div>
                     <button class="btn btn-gradient">QUERO SER PLUG.Z</button>
                 </div>
-            </div>
 
-            <!-- O contêiner do carrossel -->
-            <div class="detailed-benefits-carousel carousel-component">
-                <div class="carousel-track-container">
-                    <div class="carousel-track">
-                        <!-- Slide: Z.Bank -->
-                        <div class="carousel-slide">
-                            <div class="detailed-benefit-card">
-                                <div class="card-header">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
-                                    Z.Bank
+                <!-- O contêiner do carrossel que servirá de âncora para as setas -->
+                <div class="detailed-benefits-carousel carousel-component">
+                    <div class="carousel-track-container">
+                        <div class="carousel-track">
+                            <!-- Slide: Z.Bank -->
+                            <div class="carousel-slide">
+                                <div class="detailed-benefit-card">
+                                    <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>Z.Bank</div>
+                                    <h3>Conta digital completa e totalmente gratuita</h3>
+                                    <ul><li>Conta digital PF e PJ</li><li>Sem cobranças mensais</li><li>App Android e iOS</li><li>Soluções PDV</li></ul>
                                 </div>
-                                <h3>Conta digital completa e totalmente gratuita</h3>
-                                <ul>
-                                    <li>Conta digital PF e PJ</li>
-                                    <li>Sem cobranças mensais</li>
-                                    <li>App Android e iOS</li>
-                                    <li>Soluções PDV</li>
-                                </ul>
+                            </div>
+
+                            <!-- Slide: Z.Farma -->
+                            <div class="carousel-slide">
+                                <div class="detailed-benefit-card">
+                                    <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>Z.Farma</div>
+                                    <h3>Descontos especiais na rede Raia e Drogasil</h3>
+                                    <ul><li>Melhor rede de farmácias</li><li>60% de desconto em genéricos</li><li>25% de desconto em controlados</li><li>5% de desconto em perfumaria</li></ul>
+                                </div>
+                            </div>
+
+                            <!-- Slide: Z.Vida -->
+                            <div class="carousel-slide">
+                                <div class="detailed-benefit-card">
+                                    <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Z.Vida</div>
+                                    <h3>Seguro Sulamérica para o titular da assinatura</h3>
+                                    <p class="coverage-label">Cobertura para:</p>
+                                    <ul><li>Morte Acidental</li><li>Invalidez por Acidente</li><li>Seguro Assistência Funeral - Familiar</li></ul>
+                                </div>
+                            </div>
+
+                            <!-- Slide: Z.Residência -->
+                            <div class="carousel-slide">
+                                <div class="detailed-benefit-card">
+                                    <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>Z.Residência</div>
+                                    <h3>Assistência para você e sua residência</h3>
+                                    <ul><li>Eletricista</li><li>Chaveiro</li><li>Segurança e Vigilância</li><li>Serviços Domésticos</li></ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide: Z.Proteção -->
+                            <div class="carousel-slide">
+                                <div class="detailed-benefit-card">
+                                    <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>Z.Proteção</div>
+                                    <h3>Proteja seus dados na internet com eficiência e agilidade</h3>
+                                    <ul><li>Recuperação e remoção de dados</li><li>Herança Digital e Suporte Direito Digital</li><li>Investigação completa da Deep e Dark Web</li><li>Suporte com atendimento humanizado</li></ul>
+                                </div>
+                            </div>
+
+                            <!-- Slide: Z.Parceiros -->
+                            <div class="carousel-slide">
+                                <div class="detailed-benefit-card">
+                                    <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Z.Parceiros</div>
+                                    <h3>Parceiros incríveis que garantem as melhores soluções!</h3>
+                                    <ul><li>Conheça nossos parceiros e seus benefícios para assinantes.</li><li>Conheça o público que visita seu site e aumente sua performance.</li></ul>
+                                </div>
                             </div>
                         </div>
-
-                        <!-- Slide: Z.Farma -->
-                        <div class="carousel-slide">
-                            <div class="detailed-benefit-card">
-                                <div class="card-header">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                                    Z.Farma
-                                </div>
-                                <h3>Descontos especiais na rede Raia e Drogasil</h3>
-                                <ul>
-                                    <li>Melhor rede de farmácias</li>
-                                    <li>60% de desconto em genéricos</li>
-                                    <li>25% de desconto em controlados</li>
-                                    <li>5% de desconto em perfumaria</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Slide: Z.Vida -->
-                        <div class="carousel-slide">
-                            <div class="detailed-benefit-card">
-                                <div class="card-header">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                    Z.Vida
-                                </div>
-                                <h3>Seguro Sulamérica para o titular da assinatura</h3>
-                                <p class="coverage-label">Cobertura para:</p>
-                                <ul>
-                                    <li>Morte Acidental</li>
-                                    <li>Invalidez por Acidente</li>
-                                    <li>Seguro Assistência Funeral - Familiar</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Slide: Z.Residência -->
-                        <div class="carousel-slide">
-                            <div class="detailed-benefit-card">
-                                <div class="card-header">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                    Z.Residência
-                                </div>
-                                <h3>Assistência para você e sua residência</h3>
-                                <ul>
-                                    <li>Eletricista</li>
-                                    <li>Chaveiro</li>
-                                    <li>Segurança e Vigilância</li>
-                                    <li>Serviços Domésticos</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <!-- Slide: Z.Proteção -->
-                        <div class="carousel-slide">
-                            <div class="detailed-benefit-card">
-                                <div class="card-header">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-                                    Z.Proteção
-                                </div>
-                                <h3>Proteja seus dados na internet com eficiência e agilidade</h3>
-                                <ul>
-                                    <li>Recuperação e remoção de dados</li>
-                                    <li>Herança Digital e Suporte Direito Digital</li>
-                                    <li>Investigação completa da Deep e Dark Web</li>
-                                    <li>Suporte com atendimento humanizado</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Slide: Z.Parceiros -->
-                        <div class="carousel-slide">
-                            <div class="detailed-benefit-card">
-                                <div class="card-header">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                                    Z.Parceiros
-                                </div>
-                                <h3>Parceiros incríveis que garantem as melhores soluções!</h3>
-                                 <ul>
-                                    <li>Conheça nossos parceiros e seus benefícios para assinantes.</li>
-                                    <li>Conheça o público que visita seu site e aumente sua performance.</li>
-                                </ul>
-                            </div>
-                        </div>
-
                     </div>
-                </div>
-
-                <div class="carousel-nav-center">
+                    <!-- Setas de navegação -->
                     <button class="carousel-arrow prev-arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
                     </button>
@@ -217,6 +169,7 @@
         <!-- =================================================== -->
         <!-- ========== FIM DO CARROSSEL DE BENEFÍCIOS =========== -->
         <!-- =================================================== -->
+
         <!-- ============================================= -->
         <!-- ========= INÍCIO DO RODAPÉ (FOOTER) ========= -->
         <!-- ============================================= -->
@@ -280,6 +233,7 @@
         <!-- ========== FIM DO RODAPÉ (FOOTER) =========== -->
         <!-- ============================================= -->
     </div>
+    
     <div class="modal-overlay" id="login-modal-overlay">
         <div class="modal-content" id="login-modal-content">
             <button class="modal-close-btn" id="login-modal-close">&times;</button>
@@ -298,5 +252,7 @@
             </form>
         </div>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
