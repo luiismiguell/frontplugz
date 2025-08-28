@@ -2311,3 +2311,143 @@ body {
         right: -1rem;
     }
 }
+/* =================================================== */
+/* ========= ESTILOS DO NOVO GRID DE SERVIÇOS (INDEX) ========= */
+/* =================================================== */
+
+/* Remove a aparência padrão de link */
+.service-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo do card principal */
+.services-grid .service-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* Espaço entre o ícone e o texto */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.services-grid .service-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Estilo do ícone */
+.services-grid .icon-bg svg {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+/* Estilo do texto dentro do card */
+.services-grid .service-card span {
+    color: #c471ed; /* Cor roxa/magenta do texto */
+    font-weight: 500;
+    text-decoration: none; /* Garante que não haja sublinhado */
+}
+/* ======================================= */
+/* ========= ESTILOS DO MODAL DE LOGIN ========= */
+/* ======================================= */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 33, 138, 0.6); /* Cor azul escura com opacidade */
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Garante que fique sobre todo o conteúdo */
+    
+    /* Escondido por padrão */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Classe que o JavaScript irá adicionar para mostrar o modal */
+.modal-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #fff;
+    color: var(--primary-blue);
+    padding: 2.5rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+    /* Animação de aparição */
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.visible .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #9ca3af;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.forgot-password-link {
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--accent-blue);
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.modal-content .btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
