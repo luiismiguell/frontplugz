@@ -2451,3 +2451,102 @@ body {
     padding: 0.8rem;
     font-size: 1rem;
 }
+/* ======================================= */
+/* ========= ESTILOS PÁGINA ASSINE ========= */
+/* ======================================= */
+
+body.page-assine {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+
+.assine-main-content {
+    padding: 6rem 0;
+}
+
+.assine-content-wrapper {
+    max-width: 700px;
+}
+
+.subscription-section,
+.existing-user-login {
+    margin-bottom: 2rem;
+}
+
+.assine-content-wrapper h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.assine-content-wrapper h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.assine-content-wrapper .price-section {
+    margin: 1rem 0 2rem 0;
+}
+
+/* Novo estilo de botão com gradiente roxo */
+.btn-gradient-purple {
+    background-image: linear-gradient(to right, #8b5cf6, #6366f1);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 2.5rem;
+}
+.btn-gradient-purple:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.assine-content-wrapper .activation-note {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 1.5rem;
+    max-width: 280px;
+}
+
+/* Divisor horizontal */
+.section-divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 3rem 0;
+}
+
+/* Seção de cadastro (newsletter) */
+.newsletter-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.newsletter-cta h3 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.newsletter-cta p { opacity: 0.8; }
+.newsletter-cta .btn-light-blue { flex-shrink: 0; }
+
+/* Rodapé simplificado (sem a curva e a sobreposição) */
+.simple-footer {
+    clip-path: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+.simple-footer .footer-cta-section {
+    display: none; /* Esconde a seção de cadastro duplicada do rodapé */
+}
+.simple-footer .footer-main {
+    padding-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .assine-content-wrapper h1 { font-size: 1.75rem; }
+    .assine-content-wrapper h2 { font-size: 1.5rem; }
+    .newsletter-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}

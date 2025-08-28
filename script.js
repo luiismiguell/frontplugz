@@ -74,19 +74,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ===============================================
-    // ========= LÓGICA DO MODAL DE LOGIN ============
+    // ========= LÓGICA DO MODAL DE LOGIN (ATUALIZADA) ============
     // ===============================================
     
-    const loginBtn = document.getElementById('login-btn');
+    // Agora seleciona TODOS os botões que devem abrir o modal
+    const loginButtons = document.querySelectorAll('#login-btn, #login-btn-main');
     const modalOverlay = document.getElementById('login-modal-overlay');
     const closeModalBtn = document.getElementById('login-modal-close');
     const loginForm = document.getElementById('login-form');
 
-    if (loginBtn && modalOverlay && closeModalBtn && loginForm) {
+    if (loginButtons.length > 0 && modalOverlay && closeModalBtn && loginForm) {
         const openModal = () => modalOverlay.classList.add('visible');
         const closeModal = () => modalOverlay.classList.remove('visible');
 
-        loginBtn.addEventListener('click', openModal);
+        // Adiciona o evento de clique para cada botão de login encontrado
+        loginButtons.forEach(btn => {
+            btn.addEventListener('click', openModal);
+        });
+
         closeModalBtn.addEventListener('click', closeModal);
         modalOverlay.addEventListener('click', (event) => {
             if (event.target === modalOverlay) closeModal();
@@ -97,4 +102,3 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         });
     }
-});
